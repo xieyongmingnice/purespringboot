@@ -1,0 +1,21 @@
+# spring相关配置
+spring:
+  application:
+    name: phhcSso
+  # 数据库参数设置
+  datasource:
+    # 时区GMT+8 在url中encode + 为 %2B
+    url: jdbc:mysql://192.168.1.66:3306/mobile_newguardofdrugsafe1?useUnicode=true&characterEncoding=utf8&serverTimezone=GMT%2B8
+    username: root
+    password: ydcpb66
+    driver-class-name: com.mysql.cj.jdbc.Driver
+# mybatis-plus相关配置
+mybatis-plus:
+  # 实体 所在包
+  type-aliases-package: com.phhc.sso.entity
+  # mapper xml文件所在位置
+  mapper-locations: classpath*:mapper/sso/*.xml
+  #mybatis.config-location=classpath:mybatis-config.xml
+# 服务端口
+server:
+  port: 8081

@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.phhc.sso.mapper.GuidanceInfoMapper">
+
+
+
+    <!-- 通用查询映射结果 -->
+    <resultMap id="BaseResultMap" type="com.phhc.sso.entity.GuidanceInfo">
+        <result column="guidance_id" property="guidanceId" />
+        <result column="user_base_id" property="userBaseId" />
+        <result column="patient_id" property="patientId" />
+        <result column="prescription_time" property="prescriptionTime" />
+        <result column="guidance_list_id" property="guidanceListId" />
+        <result column="hospital_name" property="hospitalName" />
+        <result column="hospital_id" property="hospitalId" />
+        <result column="hospital_logo" property="hospitalLogo" />
+        <result column="guidance_alias_name" property="guidanceAliasName" />
+        <result column="user_qrcode_scene_id" property="userQrcodeSceneId" />
+        <result column="user_qrcode_content" property="userQrcodeContent" />
+        <result column="user_qrcode_ftp_path" property="userQrcodeFtpPath" />
+        <result column="user_qrcode_create_time" property="userQrcodeCreateTime" />
+        <result column="user_qrcode_invalid_time" property="userQrcodeInvalidTime" />
+        <result column="qrcode_init_code" property="qrcodeInitCode" />
+        <result column="save_time" property="saveTime" />
+        <result column="create_time" property="createTime" />
+        <result column="creator" property="creator" />
+        <result column="update_time" property="updateTime" />
+        <result column="updater" property="updater" />
+        <result column="delete_flag" property="deleteFlag" />
+    </resultMap>
+
+    <!-- 通用查询结果列 -->
+    <sql id="Base_Column_List">
+        guidance_id, user_base_id, patient_id, prescription_time, guidance_list_id, hospital_name, hospital_id, hospital_logo, guidance_alias_name, user_qrcode_scene_id, user_qrcode_content, user_qrcode_ftp_path, user_qrcode_create_time, user_qrcode_invalid_time, qrcode_init_code, save_time, create_time, creator, update_time, updater, delete_flag
+    </sql>
+
+</mapper>

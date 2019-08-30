@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.phhc.sso.mapper.UserExtInfoMapper">
+
+    <!-- 通用查询映射结果 -->
+    <resultMap id="BaseResultMap" type="com.phhc.sso.entity.UserExtInfo">
+        <id column="user_ext_info_id" property="userExtInfoId" />
+        <result column="user_base_info_id" property="userBaseInfoId" />
+        <result column="real_name" property="realName" />
+        <result column="nick_name" property="nickName" />
+        <result column="tel_number" property="telNumber" />
+        <result column="profile_photo" property="profilePhoto" />
+        <result column="sex" property="sex" />
+        <result column="birthday" property="birthday" />
+        <result column="drug_remind_switch_flag" property="drugRemindSwitchFlag" />
+        <result column="user_recent_hospital_id" property="userRecentHospitalId" />
+        <result column="delete_flag" property="deleteFlag" />
+        <result column="create_time" property="createTime" />
+        <result column="creator" property="creator" />
+        <result column="update_time" property="updateTime" />
+        <result column="updater" property="updater" />
+    </resultMap>
+
+    <!-- 通用查询结果列 -->
+    <sql id="Base_Column_List">
+        user_ext_info_id, user_base_info_id, real_name, nick_name, tel_number, profile_photo, sex, birthday, drug_remind_switch_flag, user_recent_hospital_id, delete_flag, create_time, creator, update_time, updater
+    </sql>
+
+</mapper>
